@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffery Wu's Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body class="font-Sofia min-h-screen bg-cool-dark text-white-eggshell font-normal removeScrollbar">
+    <section class="fixed sm:relative min-w-full flex flex-col left-0 top-0">
+        <div class="p-4 bg-cool-dark flex flex-row justify-between items-center sm:mt-2 lg:mt-4">
+            <div class="rounded-full overflow-auto lg:ml-6">
+                <img src="pictures\P1011721.JPG" alt="Logo" class="object-cover size-10 lg:size-16">
+            </div>
+            <button id="mobile-open-menu-button" class="cursor-pointer size-8">
+                <div class="transition-all duration-500 bg-white-eggshell h-[6px] rounded-full w-8 sm:hidden focus:outline-none after:duration-500 after:absolute after:translate-y-3 after:-translate-x-4 after:content-[''] after:bg-my-green after:w-8 after:h-[6px] after:rounded-full before:duration-500 before:absolute before:-translate-y-3 before:-translate-x-4 before:content-[''] before:bg-my-green before:w-8 before:h-[6px] before:rounded-full"></div>
+            </button>
+
+            <nav class="hidden sm:block space-x-8 text-xl pr-6 lg:text-2xl xl:text-3xl">
+                <a href="#about" class="hover:opacity-90">About</a>
+                <a href="#credientials" class="hover:opacity-90">Resume</a>
+                <a href="#projects" class="hover:opacity-90">Projects</a>
+                <a href="#contact" class="hover:opacity-90">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden sm:hidden w-full bg-hover-grey space-y-5 py-4 flex-col items-center justify-around font-semibold text-4xl origin-top animate-popDown">
+            <a href="#about" class="hover:opacity-90 ">About</a>
+            <a href="#credientials" class="hover:opacity-90">Resume</a>
+            <a href="#projects" class="hover:opacity-90">Projects</a>
+            <a href="#contact" class="hover:opacity-90">Contact</a>
+        </div>
+
+    </section>
+
+
+
+    <main>
+        <section class="mt-20 sm:mt-0 mb-12 flex flex-row px-8 xl:mt-5 lg:pl-12">
+            <div>   
+                <div class="mt-2 shadow-md inline-flex">
+                    <h1 class=" bg-white-eggshell text-cool-dark pl-4 py-1 pr-8 text-4xl sm:text-6xl md:text-7xl lg:text-[110px] lg:pt-1 xl:text-[120px] xl:py-2 after:animate-typingWait after:text-cool-dark after:content-['|'] after:h-1/2"> Jeffery Wu | CS</h1>
+                </div>
+                <h2 class="text-project-white mt-2 lg:mt-4 pl-3 text-xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl  lg:pl-4">Hello, this is my site!</h2>
+                <h3 class="text-project-white font-normal md:pt-1 pl-3 text-xs sm:text-lg md:text-xl xl:text-4xl xl:pt-3 lg:pl-4 lg:text-3xl">First Year CS Student at Queen’s University</h3>
+                <div class="flex flex-row items-center pt-2 space-x-3 sm:space-x-5 md:space-x-12 xl:space-x-10 lg:pt-3 ml-8 sm:ml-12 md:ml-10 lg:ml-32 xl:pt-5">
+                    <a href="https://github.com/JefferyLWu"><img src="pictures/Github.svg" alt="Github" class="ease-in-out delay-[125] duration-[250ms] hover:opacity-80 hover:scale-110 w-8 md:w-12 xl:w-16"></a>
+                    <a href="https://www.linkedin.com/in/jefferylwu/"><img src="pictures/LinkedIn.svg" alt="LinkedIn" class="ease-in-out delay-[125] duration-[250ms] hover:opacity-80 hover:scale-110 w-8 md:w-12 xl:w-16"></a>
+                    <a href="https://www.instagram.com/hasjeffery/"><img src="pictures/Instagram.svg" alt="Instagram" class="ease-in-out delay-[125] duration-[250ms] hover:opacity-80 hover:scale-110 h-10 md:h-14 xl:h-[70px]"></a>
+                    <a href="mailto:jefferyl.wu@gmail.com"><img src="pictures/Email.svg" alt="Email" class="ease-in-out delay-[125] duration-[250ms] hover:opacity-80 hover:scale-110 h-10 md:h-16 xl:h-[80px]"></a>
+                </div>
+            </div>
+            <div class="-z-10 relative -left-[4%] top-5 bg-green-600 aspect-[4/7] h-auto w-[20%] lg:top-8">
+                <img src="pictures\profile_pic.JPG" alt="PhotoDuck" class="h-full object-cover">
+            </div>
+        </section>
+
+        <section id="about" class="bg-sub-grey mx-auto sm:ml-auto sm:mx-0 pt-3 pb-5 mb-10 p-3 sm:p-8  w-11/12 lg:w-5/6 text-center">
+            <h3 class="text-my-green underline font-semibold text-xl lg:text-2xl leading-6">About</h3>
+            <h4 class="text-white-eggshell underline text-4xl lg:text-5xl">Who Am I?</h4>
+
+            <div class="my-4 sm:my-0 flex sm:block flex-row justify-evenly">
+                <div class="pt-2 sm:py-6 flex sm:ml-0 flex-col sm:flex-row justify-evenly mr-3 text-base md:text-lg lg:text-xl xl:text-2xl">
+                    <div class="w-fit group text-left px-1 flex flex-row bg-gradient-to-r from-white-eggshell from-[25.25%] to-[25.25%] bg-[length:200%] hover:text-white-eggshell hover:bg-[-50.25%] hover:bg-[length:200%] text-cool-dark font-extrabold ease-in-out delay-75 duration-300">
+                        Full Name: 
+                        <div class="pl-1 font-light text-white-eggshell group-hover:font-normal group-hover:text-cool-dark ease-in-out delay-75 duration-300">
+                            Jeffery Wu
+                        </div>
+                    </div>
+                    <div class="w-fit group text-left px-1 flex flex-row bg-gradient-to-r from-white-eggshell from-[18.75%] to-[18.75%] bg-[length:200%] hover:text-white-eggshell hover:bg-[-16.25%] hover:bg-[length:330%] text-cool-dark font-extrabold ease-in-out delay-75 duration-300">
+                        Location:
+                        <div class="pl-1 font-light text-white-eggshell group-hover:font-normal group-hover:text-cool-dark ease-in-out delay-75 duration-300">
+                            Toronto, Ontario
+                        </div>
+                    </div>
+                    <div class="w-fit group text-left px-1 flex flex-row bg-gradient-to-r from-white-eggshell from-[11%] to-[11%] bg-[length:200%] hover:text-white-eggshell hover:bg-[-3.7%] hover:bg-[length:700%] text-cool-dark font-extrabold hover:text- ease-in-out delay-75 duration-300 group"> 
+                        Email:
+                        <div class="pl-1 font-light text-white-eggshell group-hover:font-normal group-hover:text-cool-dark ease-in-out delay-75 duration-300">
+                            jefferyl.wu@gmail.com
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="sm:hidden aspect-square w-[20%] xl:w-[15%] h-auto lg:ml-4">
+                    <img src="pictures\P1011911.JPG" alt="PhotoDuck" class="h-full w-full object-cover shadow-about-inv-profile">
+                </div>
+            </div>
+
+            <div class="flex pl-1 flex-row justify-evenly xl:justify-start items-center sm:space-x-5 pt-2 sm:pt-0">
+                <div class="hidden sm:flex aspect-square w-[20%] xl:w-[15%] h-auto lg:ml-4 left-20">
+                    <img src="pictures\P1011911.JPG" alt="PhotoDuck" class="h-full w-full object-cover shadow-about-profile">
+                </div>
+
+                <p class="block text-center sm:w-9/12 font-normal mt-1 sm:text-base lg:text-lg xl:text-xl sm:text-left">I’m a computer science student striving to make a change in the world.
+                    I’m currently studying at Queen’s University with an special interest in AI ethics and game design, 
+                    but always willing and wanting to learn more! In my free time you’ll see me doing some photography,
+                     biking in nature, making conversation, playing video games, and creating both 2D and 3D art!
+                </p>
+            </div>
+
+            <div class="hidden lg:ml-5 sm:flex pl-1 sm:pt-4 flex-row justify-evenly xl:justify-start items-center sm:space-x-5">
+                <ul class="w-9/12 mt-1 text-xs md:text-sm xl:text-base text-left list-decimal">
+                    <li>I feel in love with coding due to how it is both a logical puzzle which any problem can be solved like math, but still has room for humanity and creativity</li>
+                    <li>Interested in talks about public transit, philosphy, economics, UI/UX design, and AI </li>
+                    <li>I love to play and work, and think the best of both worlds can often come together. Work helping us play better and play inspiring us to work better</li>
+                </ul>
+                <div class="hidden sm:flex aspect-square w-[20%] xl:w-[15%] h-auto lg:ml-4 left-20">
+                    <img src="pictures/DSCN3387.JPG" alt="PhotoDuck" class="h-full w-full object-cover shadow-about-profile">
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-evenly font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-3" >
+                <div class="duration-500 delay-[125] hover:scale-110 relative lg:w-2/5 my-4 flex flex-col gap-y-2 items-center justify-center px-2">
+                    <img src="pictures/Hackathon.svg" alt="Hackathon" class="opacity-25 w-full h-full absolute" >
+                    <div class="text-my-green py-2 ">4+ Hackathons<br>Attended/Directed</div>
+                </div>
+                <div class="duration-500 delay-[125] hover:scale-110 relative lg:w-2/5 my-4 flex flex-col gap-y-2 items-center justify-center px-2">
+                    <img src="pictures/Clock.svg" alt="Clock" class="opacity-25 w-full h-full absolute" >
+                    <div class="text-my-green py-2 ">10+ Projects<br>Produced/Contributed</div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="credientials" class="sm:bg-sub-grey mx-auto sm:mr-auto sm:ml-0 mt-3 px-8 py-4 w-5/6 text-center">
+            <h3 class="text-my-green underline font-semibold text-xl lg:text-2xl leading-6">Resume</h3>
+            <h4 class="text-white-eggshell underline text-4xl lg:text-5xl">Credentials</h4>
+            <div class="flex flex-col sm:hidden lg:flex lg:flex-row flex-wrap justify-center gap-x-6 gap-y-3 mb-3 mt-4">
+
+                <div class="duration-500 delay-[125] hover:scale-110 relative lg:w-2/5 my-4 flex flex-col gap-y-2 items-center justify-center px-2">
+                    <img src="pictures/Compsa.svg" alt="Queen's COMPSA Logo" class="opacity-15 w-full h-full absolute" >
+                    <p class="text-resume-green font-bold text-3xl"> COMPSA First Year Representative</p>
+                    <p class="w-40 bg-white-eggshell underline leading-3 py-1 text-cool-dark font-extrabold">2023-2024</p>
+                    <p class="text-white-eggshell text-lg">Worked with the Computing Student Association of Queens to engage the general computing student body with events and answer any questions that they may have. Substitued for others when needed.</p>
+                </div>
+
+                <div class="duration-500 delay-[125] hover:scale-110 relative lg:w-2/5 my-4 flex flex-col gap-y-2 items-center justify-center px-2">
+                    <img src="pictures/YRHacks.svg" alt="YRHacks Logo" class="opacity-15 w-full h-full absolute" >
+                    <p class="text-resume-green font-bold text-3xl"> YRHacks Lead Organizer</p>
+                    <p class="w-40 bg-white-eggshell underline leading-3 py-1 text-cool-dark font-extrabold">2021-2023</p>
+                    <p class="text-white-eggshell text-lg">Ran the York Region District School Board (YRDSB) hackathon as the lead organizer for the 2022-2023 year. Worked with teams to establish sponsorship opportunities, a suitable website, a smooth registration process, and the event itself.</p>
+                </div>
+
+
+            </div>
+
+            <div class="hidden sm:flex lg:hidden flex-col space-y-4 pt-6 mb-6 text-left">
+                <div class="duration-500 delay-[125] hover:scale-105 flex flex-row"> 
+                    <div class="h-auto w-1 mr-3 bg-white-eggshell"></div>
+                    <div class="flex flex-col relative -top-1.5 ">
+                        <p class="text-resume-green text-xl font-bold lg:text-3xl"> COMPSA First Year Representative</p>
+                        <div class="bg-white-eggshell w-max pt-0.5 h-4 ">
+                            <p class="underline leading-3 text-sm px-1  text-cool-dark font-extrabold">2023-2024</p>
+                        </div>
+                        <p class="pt-1 text-white-eggshell">Worked with the Computing Student Association of Queens to engage the general computing student body with events and answer any questions that they may have. Substitued for others when needed.</p>
+                    </div>
+                    <img src="pictures/Compsa.svg" alt="Queen's COMPSA Logo" class="w-72" >
+                </div>
+
+                <div class="duration-500 delay-[125] hover:scale-105 flex flex-row"> 
+                    <div class="h-auto w-1 mr-3 bg-white-eggshell"></div>
+                    <div class="flex flex-col relative -top-1.5">
+                        <p class="text-resume-green text-xl font-bold lg:text-3xl"> YRHacks Lead Organizer</p>
+                        <div class="bg-white-eggshell w-max h-4 ">
+                            <p class="top-0.5 relative underline leading-3 text-sm px-1  text-cool-dark font-extrabold">2021-2023</p>
+                        </div>
+                        <p class="pt-1 text-white-eggshell">Ran the York Region District School Board (YRDSB) hackathon as the lead organizer for the 2022-2023 year. Worked with teams to establish sponsorship opportunities, a suitable website, a smooth registration process, and the event itself.</p>
+                    </div>
+                    <img src="pictures/YRHacks.svg" alt="YRHacks Logo" class="ml-auto w-1/5" >
+                </div>
+            </div>
+
+
+            <div class="bg-skill-grey rounded-lg sm:w-1/2 lg:w-2/3 pt-2 pb-4 mx-auto mb-5">
+                <p class="underline text-xl font-semi-bold xl:text-2xl">Programming Skill Set</p>
+                <div class="hidden md:flex space-x-3 flex-row justify-center flex-wrap px-2">
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex items-center justify-center">
+                        <p class="">Python</p>
+                        <img src="pictures/Code Icons/Python.svg" alt="Python Logo">
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex align-middle">
+                        <p class="">Java</p>
+                        <img src="pictures/Code Icons/Java.svg" alt="Java Logo">
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex">
+                        <p class="">HTML</p>
+                        <img src="pictures/Code Icons/HTML.svg" alt="HTML Logo">
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex">
+                        <p class="">CSS</p>
+                        <img src="pictures/Code Icons/CSS.svg" alt="CSS Logo" >
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex">
+                        <p class="">JS</p>
+                        <img src="pictures/Code Icons/JS.svg" alt="JS Logo" >
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex">
+                        <p class="">C#</p>
+                        <img src="pictures/Code Icons/CSharp.svg" alt="Python Logo">
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex">
+                        <p class="">Unity</p>
+                        <img src="pictures/Code Icons/Unity.svg" alt="Unity Logo" >
+                    </div>
+                    <div class="transition delay-[125] hover:scale-110 w-10 lg:w-14 flex-col flex align-middle">
+                        <p class="">GitHub</p>
+                        <img src="pictures/Code Icons/Github.svg" alt="Unity Logo">
+                    </div>
+
+
+                </div>
+                <div class="overflow-clip flex-wrap flex md:hidden space-x-3 flex-row justify-center items-center px-2">
+                    <img src="pictures/Code Icons/Python.svg" alt="Python Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/Java.svg" alt="Java Logo" class="transition delay-[125] hover:scale-110 w-10" >
+                    <img src="pictures/Code Icons/HTML.svg" alt="HTML Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/CSS.svg" alt="CSS Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/JS.svg" alt="JS Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/CSharp.svg" alt="C# Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/Unity.svg" alt="Unity Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                    <img src="pictures/Code Icons/Github.svg" alt="Github Logo" class="transition delay-[125] hover:scale-110 pt-2 w-10" >
+                </div>
+            </div>
+
+
+
+            
+            <a class="transition delay-[125] hover:scale-110 space-x-1 sm:space-x-3 justify-center hover:bg-hover-grey bg-skill-grey rounded-full w-2/3 sm:w-1/2 h-14 m-auto flex flex-row" href="files/Jeffery_Wu_CSREsume.pdf" download="Jeffery_Wu_Resume">
+                <p class=" sm:text-lg md:text-xl lg:text-2xl my-auto">Download Resume</p>
+                <img src="pictures/Download.svg" alt="Download Symbol" class="w-5 sm:w-10" >
+            </a>
+        </section>
+        
+        <section id="projects" class="m-auto pt-3 px-8 w-11/12 text-center mt-20">
+            <h6 class="text-my-green underline text-xl font-semibold">Projects</h3>
+            <h4 class="text-white-eggshell underline text-4xl ">Check Them Out!</h4>
+            <div class="sm:space-x-5 pt-4 flex flex-col sm:flex-row justify-center flex-wrap">
+                <div class="h-fit sm:w-2/5 p-5 lg:w-[30%] hover:scale-110 duration-200 delay-100">
+                    <img src="pictures/PersonalWebScreen.PNG" alt="Personal Site Preview" class="rounded-t-3xl outline outline-1 outline-white-eggshell" > 
+                    <div class="bg-project-white rounded-b-3xl">
+                        <h6 class="text-cool-dark font-extrabold text-xl lg:text-2xl lg:pb-0  pt-2 pb-1 px-1 leading-5">Personal Website</h6>
+                        <div class="flex flex-row justify-center flex-wrap py-1 px-1 gap-x-1 gap-y-1 text-xxs leading-none mb-2 text-white-eggshell lg:text-[12px]">
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Javascript</span>
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Tailwind</span>
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Figma</span>
+                        </div>
+                        <p class="px-3 text-left text-black text-xs lg:text-sm lg:leading-4 font-extrabold">Created a personal protfolio website as well as plans for a fun personal website later on, stay tuned!</p>
+                        <div class="h-fit justify-between flex flex-row items-center px-3 py-2 lg:py-4">
+                            <a href="https://www.linkedin.com/in/jefferylwu/" class="space-x-1 flex flex-row items-center">
+                                <img src="pictures/Code Icons/Github(Dark).svg" alt="Link To Github" class="w-5">
+                                <p class="text-cool-dark font-bold hidden sm:block">Github</p>
+                            </a>
+                            <a href="jefferywu.ca" class="space-x-1 flex flex-row align-middle">
+                                <p class="text-cool-dark font-bold hidden sm:block">Link</p>
+                                <img src="pictures/link.svg" alt="Link To Project" class="w-6">
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="h-fit sm:w-2/5 p-5 lg:w-[30%] hover:scale-110 duration-200 delay-100">
+                    <img src="pictures/QWebImg.png" alt="QWeb Preview" class="rounded-t-3xl outline outline-2 outline-white-eggshell" > 
+                    <div class="bg-project-white rounded-b-3xl">
+                        <h6 class="text-cool-dark font-extrabold text-xl lg:text-2xl lg:pb-0  pt-2 pb-1 px-1 leading-5">QWeb Club Website</h6>
+                        <div class="flex flex-row justify-center flex-wrap py-1 px-1 gap-x-1 gap-y-1 text-xxs leading-none mb-2 text-white-eggshell lg:text-[12px]">
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Javascript</span>
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Tailwind</span>
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">Figma</span>
+                            <span class="inline-flex justify-center px-3 py-0.5 lg:py-1 bg-widget-black rounded-full">React</span>
+                        </div>
+                        <p class="px-3 text-left text-black text-xs lg:text-sm lg:leading-4 font-extrabold">Created a website for the Queen's Board Game Club with a group of 4 others, had a role mainly in designing and implementing them into the site.</p>
+                        <div class="h-fit justify-between flex flex-row items-center px-3 py-2 lg:py-4">
+                            <a href="https://github.com/queens-web-development-club/team-3" class="space-x-1 flex flex-row items-center">
+                                <img src="pictures/Code Icons/Github(Dark).svg" alt="Link To Github" class="w-5">
+                                <p class="text-cool-dark font-bold hidden sm:block">Github</p>
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="mt-20 mb-20 flex flex-col justify-center flex-wrap text-center">
+            <h3 class="text-my-green underline text-xl font-semibold lg:text-2xl">Contact</h3>
+            <h4 class="text-white-eggshell underline text-2xl lg:text-3xl">Like The Site? More Questions? Connect With Me!</h4>
+            <h5 class="text-white-eggshell text-lg lg:text-xl">Let me get to know you better!</h5>
+            <div class=" flex flex-col gap-y-2 sm:flex-row flex-wrap justify-center mt-5 lg:text-lg">
+                <div class="flex flex-row justify-center items-center mr-2">
+                    <a href="mailto:jefferyl.wu@gmail.com"><img src="pictures/Email.svg" alt="Email" class="h-8 hover:opacity-80 mr-2 lg:h-12"></a>
+                    <h6 class="text-white-eggshell"> jefferyl.wu@gmail.com</h6>
+                </div>
+                <div class="flex flex-row justify-center items-center mr-2">
+                    <a href="https://www.linkedin.com/in/jefferylwu/"><img src="pictures/LinkedIn.svg" alt="Email" class="h-8 hover:opacity-80 mr-2 lg:h-12"></a>
+                    <h6 class="text-white-eggshell"> Jeffery L. Wu</h6>
+                </div>
+                <div class="flex flex-row justify-center items-center mr-2">
+                    <a href="https://www.instagram.com/hasjeffery/"><img src="pictures/Instagram.svg" alt="Instagram" class="h-8 hover:opacity-80 mr-2 lg:h-12"></a>
+                    <h6 class="text-white-eggshell"> hasJeffery</h6>
+                </div>
+
+            </div>
+        
+        </section>
+
+
+    </main>
+
+</body>
+</html>
