@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./build/*.{html, js}'],
+  safelist: [
+    'toggle-menu'
+  ],
   theme: {
     extend: {
       fontSize: {
